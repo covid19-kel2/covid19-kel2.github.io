@@ -1,0 +1,28 @@
+.cell:hover{
+			background-color: #5cb85c;
+			text-decoration: none;
+			opacity: 50%;
+			color: black;
+}
+a.p-2:hover{
+			border: 0px;
+			border-bottom: 4px solid;
+			border-color: #5cb85c;
+			border-image-slice: 1;
+			text-decoration: none;
+}
+a.list-group-item:hover{
+			border: 0px;
+			border-bottom: 4px solid;
+			border-color: #0275d8;
+			border-image-slice: 1;
+			text-decoration: none;
+}
+body {
+		  min-height: 75rem;
+		  padding-top: 7rem;
+		  font-family: 'Open Sans', sans-serif;
+}
+.card{
+		font-size: 14
+}

@@ -1,0 +1,670 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Covid - 19 Information</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+	<style>
+		.cell:hover{
+			background-color: #5cb85c;
+			text-decoration: none;
+			opacity: 50%;
+			color: black;
+		}
+		a:hover{
+			text-decoration:none;
+		}
+		body {
+		  min-height: 75rem;
+		  padding-top: 7rem;
+		  font-family: 'Open Sans', sans-serif;
+		}
+		.card{
+			font-size: 14
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("document").ready(function(){
+			$("#test").hide(1000);
+			$("#sembunyikan").hide(1000);
+			$("#selengkapnya").click(function(){
+				$("#test").show(1000);
+				$("#selengkapnya").hide(1000);
+				$("#sembunyikan").show(1000);
+			});
+			$("#sembunyikan").click(function(){
+				$("#test").hide(1000);
+				$("#selengkapnya").show(1000);
+				$("#sembunyikan").hide(1000);
+			});
+		});
+	</script>
+	
+</head>
+<body>
+	
+			<!-- Navbar -->
+	<div class="d-flex flex-column fixed-top flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+	  <div class="my-0 mr-md-auto font-weight-normal">
+		<a class="navbar-brand" href="../index.html">
+    	<div class="row">
+			<div class="col-sm-2"><img src="https://pikobar.jabarprov.go.id/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy"></div>
+			<div class="col-sm-10">
+				<small class="text-dark" style="font-size:15">Pusat Informasi & Koordinasi COVID-19</small><br>
+				<small class="text-dark" style="font-size: 13">Provinsi Jawa Barat</small>
+			</div>
+		</div>
+  		</a>
+	  </div>
+	  <nav class="my-2 my-md-0 mr-md-3">
+	    <a class="p-2 text-dark" href="../index.html">Home</a>
+	    <a class="p-2 text-dark" href="data.html">Data</a>
+	    <a class="p-2 text-dark" href="berita.html">Berita</a>
+	    <a class="p-2 text-dark" href="kontak.html">Kontak</a>
+	    <a class="p-2 text-dark" href="faq.html">FAQ</a>
+	  </nav>
+	</div>
+	<!--Konten !-->
+	<main role="main" class="container">
+		<h4>Angka Kejadian Di Jawa Barat</h4>
+		<p class="text-secondary">Update Terakhir: Senin, 11 Mei 2020 15.43</p>
+		<div class="row" style="margin-top: 20px;">
+			<div class="col-sm-4">
+				<div class="alert alert-danger" role="alert">
+					<p class="text-secondary">Terkonfirmasi</p>
+					<div class="row">
+						<div class="col-sm-6">
+							<h4 class="text-dark">Jawa Barat</h4>
+						  	<h4 class="text-dark">Indonesia</h4>
+						</div>
+						<div class="col-sm-6">
+						  <h4 class="text-dark"  align="right">
+						  			1437
+							<span class="badge badge-danger" style="margin-left: 1px;">+0</span>
+							</h4>
+							<h4 class="text-dark" align="right">
+								14.265
+							<span class="badge badge-danger" style="margin-left: 1px;">+233</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+						<div class="alert alert-success" role="alert">
+						  <p class="text-secondary">SEMBUH</p>
+						  <div class="row">
+						  	<div class="col-sm-6">
+						  		<h4 class="text-dark">Jawa Barat</h4>
+						  		<h4 class="text-dark">Indonesia</h4>
+						  	</div>
+						  	<div class="col-sm-6">
+						  		<h4 class="text-dark" style="margin-left: 20px;" align="right">
+						  			213
+						  			<span class="badge badge-success" style="margin-left: 1px;">+11</span>
+						  		</h4>
+						  		<h4 class="text-dark" align="right">
+						  			2881
+						  			<span class="badge badge-success" style="margin-left: 1px;">+183</span>
+						  		</h4>
+						  	</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="alert alert-warning" role="alert">
+						  <p class="text-secondary">MENINGGAL</p>
+						  <div class="row">
+						  	<div class="col-sm-6">
+						  		<h4 class="text-dark">Jawa Barat</h4>
+						  		<h4 class="text-dark">Indonesia</h4>
+						  	</div>
+						  	<div class="col-sm-6">
+						  		<h4 class="text-dark"  align="right">
+						  			95
+						  			<span class="badge badge-warning" style="margin-left: 1px;">+0</span>
+						  		</h4>
+						  		<h4 class="text-dark" align="right">
+						  			995
+						  			<span class="badge badge-warning" style="margin-left: 1px;">+18</span>
+						  		</h4>
+						  	</div>
+						  </div>
+						</div>
+					</div>
+		</div>
+		<div class="row" style="margin-top: 20px;">
+					<div class="col-sm-6">
+						<h3>ODP(Orang Dalam Pemantauan)</h3>
+						<div class="radius p-3 mt-3 bg-white shadow" role="alert">
+							<div class="row" style="margin-top: 10px;">
+						    	<div class="col-sm-4">
+						    		<h4 class="p-2 text-success"  style="margin-bottom: -05px">
+						    			7.194 
+						    			<font color="black" size="2px;">(16.3%)</font>
+						    		</h4>
+						    		<p class="text-muted" style="font-size: 15">
+						    			Proses Pemantauan
+						    		</p>
+						    	</div>
+						    	<div class="col-sm-4">
+						    		<h4 class="p-2 text-success"  style="margin-bottom: -05px">
+						    			36.925
+						    			<font color="black" size="2px;">(83.7%)</font>
+						    		</h4>
+						    		<p class="text-muted" style="font-size: 15">
+						    			Selesai Pemantauan
+						    		</p>
+						    	</div>
+						    	<div class="col-sm-4">
+						    		<h4 class="p-2 text-success" style="margin-bottom: -05px">
+						    			44.116
+						    		</h4>
+						    		<p class="text-muted" style="font-size: 15">
+						    			Total ODP
+						    		</p>
+						    	</div>
+						    </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<h3>PDP(Pasien Dalam Pemantauan)</h3>
+						<div class="radius p-3 mt-3 bg-white shadow" role="alert">
+							<div class="row" style="margin-top: 10px;">
+						    	<div class="col-sm-4">
+						    		<h4 class="p-2 text-success"  style="margin-bottom: -05px" align="left">
+						    			2.556
+						    			<font color="black" size="2px;">(36,65% )</font>
+						    		</h4>
+						    		<p class="text-muted" align="left" style="font-size: 15">
+						    			Proses Pengawasan
+						    		</p>
+						    	</div>
+						    	<div class="col-sm-4">
+						    		<h4 class="p-2 text-success"  style="margin-bottom: -05px" align="center">
+						    			4.419
+						    			<font color="black" size="2px;">(63,35%)</font>
+						    		</h4>
+						    		<p class="text-muted" align="center" style="font-size: 15">
+						    			Selesai Pengawasan
+						    		</p>
+						    	</div>
+						    	<div class="col-sm-4">
+						    		<h4 class="p-2 text-success" style="margin-bottom: -05px" >
+						    			6.975
+						    		</h4>
+						    		<p class="text-muted" style="font-size: 15">
+						    			Total PDP
+						    		</p>
+						    	</div>
+						    </div>
+						</div>
+					</div>
+		</div>
+		<hr>
+		<div class="card text-white bg-success mb-3" style="padding: 30px;">
+		  <div class="row">
+		  	<div class="col-sm-6">   
+				<h6 class="p-2">RDT(Rapid Diagnostic Test)</h6>
+				<p class="p-2">
+					Rapid Diagnostic Test (RDT) atau test diagnostik cepat merupakan test yang digunakan sebagai skrining medis awal untuk mendeteksi COVID-19. Pada hasil RDT yang Reaktif akan dilakukan pemeriksaan konfirmasi lebih lanjut dengan metode Polymerase Chain Reaction (PCR).
+				</p>
+				<p class="p-2">
+					Jika Anda ingin mengikuti Tes Masif COVID-19, daftarkan diri Anda di sini &nbsp <a href="" class="badge badge-light text-success">Daftar Disini</a>
+				</p>
+		  	</div>
+		  	<div class="col-sm-6">
+		  		<h6 class="p-2">&nbsp;</h6>
+				<p>
+					<h1>108.182</h1>
+					<h6>Jumlah RDT &nbsp;<span class="text-light fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="Jumlah Rapid Test Yang Telah Dilakukan"></span></h6>
+				</p>
+				<p class="p-3">
+					<div class="row">
+						<div class="col-sm-4">
+							3.179 (2,89)% <br>
+							Reaktif
+						</div>
+						<div class="col-sm-4">
+							106.805 (97,11)% <br>
+							Non Reaktif
+						</div>
+						<div class="col-sm-4">
+							0 (0)% <br>
+							Invalid
+						</div>
+					</div>
+				</p>
+		  	</div>
+		  </div>
+		</div>
+		<div class="card text-white bg-info mb-3" style="padding: 30px;">
+		  <div class="row">
+		  	<div class="col-sm-6">   
+				<h6 class="p-2"><b>PCR (Polymerase Chain Reaction)</b></h6>
+				<p class="p-2">
+					Polymerase Chain Reaction atau PCR merupakan pemeriksaan diagnostik yang dianggap paling akurat untuk memastikan apakah seseorang menderita COVID-19 atau tidak.
+				</p>
+				<p class="p-2">
+				<h6><b>Disclaimer :</b></h6>
+					Angka Positif setelah tes PCR didapatkan berdasarkan hasil pengecekan yang dikeluarkan Laboratorium Kesehatan Daerah Jawa Barat. <span id="test"> Angka Positif hasil tes PCR tidak merepresentasikan seluruh kasus Terkonfirmasi di Jawa Barat dikarenakan terdapat sumber pengujian lain selain Laboratorium Kesehatan Daerah Jawa Barat.</span> 
+					<button class="btn btn-info" id="selengkapnya">selengkapnya</button>
+					<button class="btn btn-info" id="sembunyikan">Sembunyikan</button>
+				</p>
+		  	</div>
+		  	<div class="col-sm-6">
+		  		<h6 class="p-2">&nbsp;</h6>
+				<p>
+					<div class="row">
+						<div class="col-sm-4">
+							<h2>8.290</h2>
+							Jumlah PCR &nbsp;<span class="text-light fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="Jumlah PCR Yang Telah Dilakukan"></span>
+						</div>
+						<div class="col-sm-4">
+							<h2>1.350 <small style="font-size: 12">(16,28)%</small></h2>
+							Positif
+						</div>
+						<div class="col-sm-4">
+							<h2>6.940 <small style="font-size: 12">(83,72)%</small> </h2>
+							Negatif
+						</div>
+					</div>
+				</p>
+		  	</div>
+		  </div>
+		</div>
+		<hr>
+		<h4 class="p-2">Total ODP & RDT</h4>
+		<table class="table">
+		  <thead class="thead-dark">
+		    <tr>
+            	<th width="5px" rowspan="2">No.</th>
+                <th rowspan="2">Kabupaten</th>
+                <th rowspan="2">Jumlah ODP (Proses Pemantauan)</th>
+                <th rowspan="2">Jumlah Diterima</th>
+                <th rowspan="2">Jumlah Pemeriksaan dengan RDT</th>
+                <th colspan="2">Jumlah Hasil Pemeriksaan</th>
+                <th rowspan="2">Prosentase Capaian RDT</th>
+                <!-- <th rowspan="2">Keterangan</th> -->
+            </tr>
+            <tr>
+                <th>+</th>
+                <th>-</th>
+            </tr>
+		  </thead>
+		  <tbody>
+			<tr>
+            	<td scope="col">1.</td>
+            	<td>Bandung</td>
+                <td scope="col">457</td>
+                <td scope="col">1.240</td>
+                <td scope="col">1.636</td>
+                <td scope="col">11</td>
+                <td scope="col">1.625</td>
+                <td scope="col">131,9</td>    
+            </tr>
+            <tr>
+            	<td scope="col">2.</td>
+            	<td>Cimahi</td>
+                <td scope="col">437</td>
+                <td scope="col">1.500</td>
+                <td scope="col">2.263</td>
+                <td scope="col">44</td>
+                <td scope="col">2.219</td>
+                <td scope="col">150,9</td>
+            </tr>
+            <tr>
+            	<td scope="col">3.</td>
+            	<td>Padalarang</td>
+                <td scope="col">457</td>
+                <td scope="col">1.240</td>
+                <td scope="col">1.636</td>
+                <td scope="col">11</td>
+                <td scope="col">1.625</td>
+                <td scope="col">131,9</td>    
+            </tr>
+            <tr>
+            	<td scope="col">4.</td>
+            	<td>Bandung Barat</td>
+                <td scope="col">437</td>
+                <td scope="col">1.500</td>
+                <td scope="col">2.263</td>
+                <td scope="col">44</td>
+                <td scope="col">2.219</td>
+                <td scope="col">150,9</td>
+            </tr>
+            <tr>
+            	<td scope="col">5.</td>
+            	<td>Subang</td>
+                <td scope="col">457</td>
+                <td scope="col">1.240</td>
+                <td scope="col">1.636</td>
+                <td scope="col">11</td>
+                <td scope="col">1.625</td>
+                <td scope="col">131,9</td>    
+            </tr>
+            <tr>
+            	<td scope="col">6.</td>
+            	<td>Cianjur</td>
+                <td scope="col">437</td>
+                <td scope="col">1.500</td>
+                <td scope="col">2.263</td>
+                <td scope="col">44</td>
+                <td scope="col">2.219</td>
+                <td scope="col">150,9</td>
+            </tr>
+            <tr>
+            	<td scope="col">7.</td>
+            	<td>Bogor</td>
+                <td scope="col">457</td>
+                <td scope="col">1.240</td>
+                <td scope="col">1.636</td>
+                <td scope="col">11</td>
+                <td scope="col">1.625</td>
+                <td scope="col">131,9</td>    
+            </tr>
+            <tr>
+            	<td scope="col">8.</td>
+            	<td>Garut</td>
+                <td scope="col">437</td>
+                <td scope="col">1.500</td>
+                <td scope="col">2.263</td>
+                <td scope="col">44</td>
+                <td scope="col">2.219</td>
+                <td scope="col">150,9</td>
+            </tr>
+            <tr>
+            	<td scope="col">9.</td>
+            	<td>Ciamis</td>
+                <td scope="col">457</td>
+                <td scope="col">1.240</td>
+                <td scope="col">1.636</td>
+                <td scope="col">11</td>
+                <td scope="col">1.625</td>
+                <td scope="col">131,9</td>    
+            </tr>
+            <tr>
+            	<td scope="col">10.</td>
+            	<td>Indramayu</td>
+                <td scope="col">437</td>
+                <td scope="col">1.500</td>
+                <td scope="col">2.263</td>
+                <td scope="col">44</td>
+                <td scope="col">2.219</td>
+                <td scope="col">150,9</td>
+            </tr>
+		  </tbody>
+		</table>
+		<hr>
+		<div class="row" style="margin-top:30px;">
+			<div class="col-sm-12" id="bar_positif_pulang_sehat">
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px;">
+			<div class="col-sm-12" id="data_odp_proses">
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px;margin-bottom: 50px;">
+			<div class="col-sm-5" id="rasio_jk">
+
+			</div>
+			<div class="col-sm-7" id="kelamin_bar"></div>
+		</div>
+		<hr>
+		<h4 class="p-2" align="center">
+			Dibuat Oleh :
+		</h4>
+		<div align="center">
+			<figure class="figure">
+			  <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-367-456319.png" alt="..."  height="200" width="200" class="figure-img img-fluid rounded">
+			  <figcaption class="figure-caption">Moch Nurul Kafi</figcaption>
+			  <figcaption class="figure-caption">3411191101</figcaption>
+			</figure>
+			<figure class="figure">
+			  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJgi1PJz3dbKI9YO4l0GDD3uf2fByA6dEe9y-CAPHNsHF3NEqD&usqp=CAU" alt="" height="200" width="200" class="figure-img img-fluid rounded">
+			  <figcaption class="figure-caption">Fadhlika Kurniawan</figcaption>
+			  <figcaption class="figure-caption">3411191103</figcaption>
+			</figure>
+			<figure class="figure">
+			  <img src="https://spon.mdp.ac.id/pluginfile.php/1/theme_moove/marketing2icon/1585531984/icon-student.png" alt="" height="200" width="200" class="figure-img img-fluid rounded" >
+			  <figcaption class="figure-caption">Sari Krisdianto</figcaption>
+			  <figcaption class="figure-caption">3411191111</figcaption>
+			</figure>
+			<figure class="figure">
+			  <img src="https://muliaasrijogja.com/wp-content/uploads/2018/01/9_avatar-512.png" alt="" height="200" width="200" class="figure-img img-fluid rounded" >
+			  <figcaption class="figure-caption">Meli Melawati</figcaption>
+			  <figcaption class="figure-caption">3411171026</figcaption>
+			</figure>
+			<figure class="figure">
+			  <img src="https://herbalnanoteknologi.com/wp-content/uploads/2020/02/Icon-Laki-3-1.png" alt="" height="200" width="200" class="figure-img img-fluid rounded" >
+			  <figcaption class="figure-caption">Tri Yudiantoro</figcaption>
+			  <figcaption class="figure-caption">3411191117</figcaption>
+			</figure>
+		</div>
+		<footer class="footer mt-auto py-3" align="center">
+			&copy; Kelompok 2 Pemograman Web Kelas D 2020	
+		</footer>
+	</main>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+// Chart 
+var chart = Highcharts.chart('data_odp_proses', {
+	chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Data Orang Dalam Pemantauan (ODP) Covid-19 Provinsi Jawa Barat'
+    },
+    xAxis: {
+        categories: ["18 April 2020","19 April 2020","20 April 2020","21 April 2020","22 April 2020","23 April 2020","24 April 2020","25 April 2020","26 April 2020","27 April 2020","28 April 2020","29 April 2020","30 April 2020","01 Mei 2020","02 Mei 2020","03 Mei 2020","04 Mei 2020","05 Mei 2020","06 Mei 2020","07 Mei 2020","08 Mei 2020","09 Mei 2020","10 Mei 2020","11 Mei 2020","12 Mei 2020","13 Mei 2020","14 Mei 2020","15 Mei 2020","16 Mei 2020","17 Mei 2020","18 April 2020","19 April 2020","20 April 2020","21 April 2020","22 April 2020","23 April 2020","24 April 2020","25 April 2020","26 April 2020","27 April 2020","28 April 2020","29 April 2020","30 April 2020","01 Mei 2020","02 Mei 2020","03 Mei 2020","04 Mei 2020","05 Mei 2020","06 Mei 2020","07 Mei 2020","08 Mei 2020","09 Mei 2020","10 Mei 2020","11 Mei 2020","12 Mei 2020","13 Mei 2020","14 Mei 2020","15 Mei 2020","16 Mei 2020","17 Mei 2020"],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Jumlah Orang'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.0f} orang</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true,
+	},
+	credits: {
+    enabled: false
+},
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+			borderWidth: 0,
+		},
+        series: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [
+        {
+            name: 'ODP Total',
+            data: [38766,40105,41148,42314,43273,45220,47662,48808,49564,50307,51162,51991,52669,53358,53923,54400,55334,55509,56185,56698,57218,57788,58259,58538,58958,59394,59779,60457,61004,61004]
+
+        },
+        {
+            name: 'Total Proses Pemantauan',
+            data: [11160,11422,11606,11884,12078,13112,14064,14639,14674,14071,13384,12509,11674,11166,10560,9886,9375,8786,8109,7605,7064,6931,6716,6303,6145,5906,5785,5928,6190,6190]
+
+        },
+        {
+            name: 'Total Selesai Pemantauan',
+            data: [27606,28683,29542,30430,31195,32108,33598,34169,34890,36236,37778,39482,40995,42192,43363,44514,45959,46723,48076,49093,50154,50857,51543,52235,52813,53488,53994,54529,54814,54814]
+
+        }
+    ],
+    colors: ['#13D5E8', '#FFC300', '#0CBD62'],
+});
+var chart = Highcharts.chart('rasio_jk', {
+	chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Rasio PDP Berdasarkan Jenis Kelamin'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+	credits: {
+    enabled: false
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                connectorColor: 'silver'
+            }
+        }
+    },
+    series: [{
+        name: 'Bagian',
+        data: [
+            { name: 'Laki-Laki (580)', y: 580 },
+            { name: 'Perempuan (577)', y: 577 },
+            
+        ]
+    }],
+    colors: ['#FFC300','#0CBD62'],
+});
+var chart = Highcharts.chart('kelamin_bar', {
+	chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Pasien Dalam Pengawasan (PDP)'
+    },
+    // subtitle: {
+    //     text: 'Source: Dinas Kesehatan Provinsi Jawa Barat'
+    // },
+    xAxis: {
+        categories: ["Pasien Dalam Pengawasan","Positif"],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Jumlah Orang'
+        },
+        allowDecimals: false
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.0f} orang</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true,
+	},
+        credits: {
+        enabled: false
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        },
+        series: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [{"name":"Laki-laki","data":[580,64]},{"name":"Perempuan","data":[577,31]}],
+    colors: ['#0CBD62' ,'#C70039'],
+    
+});
+var chart = Highcharts.chart('bar_positif_pulang_sehat', {
+	chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Data Pasien Terkonfirmasi (Positif) Covid-19 Provinsi Jawa Barat'
+    },
+    // subtitle: {
+    //     text: 'Hasil Rekap Data Terbaru dari Dinas Kesehatan Provinsi Jawa Barat'
+    // },
+    xAxis: {
+        categories: ["18 April 2020","19 April 2020","20 April 2020","21 April 2020","22 April 2020","23 April 2020","24 April 2020","25 April 2020","26 April 2020","27 April 2020","28 April 2020","29 April 2020","30 April 2020","01 Mei 2020","02 Mei 2020","03 Mei 2020","04 Mei 2020","05 Mei 2020","06 Mei 2020","07 Mei 2020","08 Mei 2020","09 Mei 2020","10 Mei 2020","11 Mei 2020","12 Mei 2020","13 Mei 2020","14 Mei 2020","15 Mei 2020","16 Mei 2020","17 Mei 2020","18 April 2020","19 April 2020","20 April 2020","21 April 2020","22 April 2020","23 April 2020","24 April 2020","25 April 2020","26 April 2020","27 April 2020","28 April 2020","29 April 2020","30 April 2020","01 Mei 2020","02 Mei 2020","03 Mei 2020","04 Mei 2020","05 Mei 2020","06 Mei 2020","07 Mei 2020","08 Mei 2020","09 Mei 2020","10 Mei 2020","11 Mei 2020","12 Mei 2020","13 Mei 2020","14 Mei 2020","15 Mei 2020","16 Mei 2020","17 Mei 2020"],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Jumlah Orang'
+        },
+        allowDecimals: false
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.0f} orang</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true,
+	},
+        credits: {
+        enabled: false
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0,
+        },
+        series: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [
+        {
+            name: 'Positif Total',
+            data: [30,30,34,35,35,36,36,38,39,39,40,41,41,42,45,53,58,61,61,66,69,71,73,74,81,88,94,95,95,95]
+	    },
+        {
+            name: 'Total Masih Dirawat',
+            data: [17,17,21,22,22,23,20,21,21,21,21,22,22,22,14,22,25,28,27,32,35,31,28,22,27,34,39,37,35,35]
+	    },
+        {
+            name: 'Total Pulang dan Sehat',
+            data: [9,9,9,9,9,9,12,13,14,14,15,15,15,16,26,26,27,27,28,28,28,34,39,46,48,48,49,52,54,54]
+	    },
+        {
+            name: 'Total Meninggal',
+            data: [4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6]
+	    },
+	],
+    colors: ['#13D5E8', '#FFC300', '#0CBD62','#C70039'],
+});
+// #Chart 
+</script>
